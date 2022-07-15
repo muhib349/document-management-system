@@ -1,0 +1,1503 @@
+{
+	"info": {
+		"_postman_id": "5c6f936b-7fb6-444b-9a9b-7424e68f0fad",
+		"name": "Team",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Store Team",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNjIxOTA2LCJleHAiOjE2MzE2MjU1MDYsIm5iZiI6MTYzMTYyMTkwNiwianRpIjoicW0wTVZpQTJ3WDVJRnpveiIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.AggT5_rsZf_jxSWc294DoxT1vcYPtOoNgLFP6EcKrEM",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Team name 1",
+							"type": "text"
+						},
+						{
+							"key": "details",
+							"value": "team details here",
+							"type": "text"
+						},
+						{
+							"key": "profile_icon",
+							"type": "file",
+							"src": "/C:/Users/PC/Downloads/11.PNG"
+						},
+						{
+							"key": "members[0][email]",
+							"value": "the.sanjib1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "members[0][first_name]",
+							"value": "Sanjib",
+							"type": "text"
+						},
+						{
+							"key": "members[0][last_name]",
+							"value": "Saha",
+							"type": "text"
+						},
+						{
+							"key": "members[0][organization]",
+							"value": "Padma",
+							"type": "text"
+						},
+						{
+							"key": "members[0][position]",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "members[1][email]",
+							"value": "pranto@email.com",
+							"type": "text"
+						},
+						{
+							"key": "members[1][first_name]",
+							"value": "Pranto",
+							"type": "text"
+						},
+						{
+							"key": "members[1][last_name]",
+							"value": "Kundu",
+							"type": "text"
+						},
+						{
+							"key": "members[1][organization]",
+							"value": "Datasoft",
+							"type": "text"
+						},
+						{
+							"key": "members[1][position]",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "is_same",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "plan_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[name]",
+							"value": "Billing Name",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[line1]",
+							"value": "{\"name\": \"hello world\", \"line1\":\"line1\" }",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[line2]",
+							"value": "line2",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[city]",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[state]",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[country]",
+							"value": "BD",
+							"type": "text"
+						},
+						{
+							"key": "billing_info[zip_code]",
+							"value": "1205",
+							"type": "text"
+						},
+						{
+							"key": "card_info[nickname]",
+							"value": "AMEX",
+							"type": "text"
+						},
+						{
+							"key": "card_info[number]",
+							"value": "371449635398431",
+							"type": "text"
+						},
+						{
+							"key": "card_info[expire_date]",
+							"value": "10/2025",
+							"type": "text"
+						},
+						{
+							"key": "card_info[cvv]",
+							"value": "254",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Store Team",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Team name 1",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "team details here",
+									"type": "text"
+								},
+								{
+									"key": "profile_icon",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/11.PNG"
+								},
+								{
+									"key": "members[0][email]",
+									"value": "the.sanjib1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "members[0][first_name]",
+									"value": "Sanjib",
+									"type": "text"
+								},
+								{
+									"key": "members[0][last_name]",
+									"value": "Saha",
+									"type": "text"
+								},
+								{
+									"key": "members[0][organization]",
+									"value": "Padma",
+									"type": "text"
+								},
+								{
+									"key": "members[0][position]",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "members[1][email]",
+									"value": "pranto@email.com",
+									"type": "text"
+								},
+								{
+									"key": "members[1][first_name]",
+									"value": "Pranto",
+									"type": "text"
+								},
+								{
+									"key": "members[1][last_name]",
+									"value": "Kundu",
+									"type": "text"
+								},
+								{
+									"key": "members[1][organization]",
+									"value": "Datasoft",
+									"type": "text"
+								},
+								{
+									"key": "members[1][position]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "members[1][id]",
+									"value": "18",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "members[0][id]",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:38:42 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:38:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 11,\n        \"name\": \"Team name 1\",\n        \"details\": \"team details here\",\n        \"users\": [\n            {\n                \"id\": 7,\n                \"first_name\": \"Kuddus\",\n                \"last_name\": \"Ali\",\n                \"email\": \"the.sanjib1@gmail.com\"\n            },\n            {\n                \"id\": 18,\n                \"first_name\": \"Pranto\",\n                \"last_name\": \"Kundu\",\n                \"email\": \"pranto@email.com\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Store Team",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNjIxOTA2LCJleHAiOjE2MzE2MjU1MDYsIm5iZiI6MTYzMTYyMTkwNiwianRpIjoicW0wTVZpQTJ3WDVJRnpveiIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.AggT5_rsZf_jxSWc294DoxT1vcYPtOoNgLFP6EcKrEM",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Team name 1",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "team details here",
+									"type": "text"
+								},
+								{
+									"key": "profile_icon",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/11.PNG"
+								},
+								{
+									"key": "members[0][email]",
+									"value": "the.sanjib1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "members[0][first_name]",
+									"value": "Sanjib",
+									"type": "text"
+								},
+								{
+									"key": "members[0][last_name]",
+									"value": "Saha",
+									"type": "text"
+								},
+								{
+									"key": "members[0][organization]",
+									"value": "Padma",
+									"type": "text"
+								},
+								{
+									"key": "members[0][position]",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "members[1][email]",
+									"value": "pranto@email.com",
+									"type": "text"
+								},
+								{
+									"key": "members[1][first_name]",
+									"value": "Pranto",
+									"type": "text"
+								},
+								{
+									"key": "members[1][last_name]",
+									"value": "Kundu",
+									"type": "text"
+								},
+								{
+									"key": "members[1][organization]",
+									"value": "Datasoft",
+									"type": "text"
+								},
+								{
+									"key": "members[1][position]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "is_same",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "plan_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[name]",
+									"value": "Billing Name",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[line1]",
+									"value": "{\"name\": \"hello world\", \"line1\":\"line1\" }",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[line2]",
+									"value": "line2",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[city]",
+									"value": "Dhaka",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[state]",
+									"value": "Dhaka",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[country]",
+									"value": "BD",
+									"type": "text"
+								},
+								{
+									"key": "billing_info[zip_code]",
+									"value": "1205",
+									"type": "text"
+								},
+								{
+									"key": "card_info[nickname]",
+									"value": "AMEX",
+									"type": "text"
+								},
+								{
+									"key": "card_info[number]",
+									"value": "371449635398431",
+									"type": "text"
+								},
+								{
+									"key": "card_info[expire_date]",
+									"value": "10/2025",
+									"type": "text"
+								},
+								{
+									"key": "card_info[cvv]",
+									"value": "254",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Sep 2021 12:34:44 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Sep 2021 12:34:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 16,\n        \"name\": \"Team name 1\",\n        \"details\": \"team details here\",\n        \"profile_icon\": \"17_1631622883_11.PNG\",\n        \"profile_icon_url\": \"http://localhost:8000/storage/uploads/teams_16/17_1631622883_11.PNG\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Team",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Team name 22222",
+							"type": "text"
+						},
+						{
+							"key": "details",
+							"value": "team details here......",
+							"type": "text"
+						},
+						{
+							"key": "profile_icon",
+							"type": "file",
+							"src": "/C:/Users/PC/Downloads/11.PNG"
+						},
+						{
+							"key": "members[0][email]",
+							"value": "the.sanjib1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "members[0][first_name]",
+							"value": "Sanjib",
+							"type": "text"
+						},
+						{
+							"key": "members[0][last_name]",
+							"value": "Saha",
+							"type": "text"
+						},
+						{
+							"key": "members[0][organization]",
+							"value": "Padma",
+							"type": "text"
+						},
+						{
+							"key": "members[0][position]",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "members[1][email]",
+							"value": "pranto@email.com",
+							"type": "text"
+						},
+						{
+							"key": "members[1][first_name]",
+							"value": "Pranto",
+							"type": "text"
+						},
+						{
+							"key": "members[1][last_name]",
+							"value": "Kundu",
+							"type": "text"
+						},
+						{
+							"key": "members[1][organization]",
+							"value": "Datasoft",
+							"type": "text"
+						},
+						{
+							"key": "members[1][position]",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "members[1][id]",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "members[0][id]",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Team",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Team name 22222",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "team details here......",
+									"type": "text"
+								},
+								{
+									"key": "profile_icon",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/11.PNG"
+								},
+								{
+									"key": "members[0][email]",
+									"value": "the.sanjib1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "members[0][first_name]",
+									"value": "Sanjib",
+									"type": "text"
+								},
+								{
+									"key": "members[0][last_name]",
+									"value": "Saha",
+									"type": "text"
+								},
+								{
+									"key": "members[0][organization]",
+									"value": "Padma",
+									"type": "text"
+								},
+								{
+									"key": "members[0][position]",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "members[1][email]",
+									"value": "pranto@email.com",
+									"type": "text"
+								},
+								{
+									"key": "members[1][first_name]",
+									"value": "Pranto",
+									"type": "text"
+								},
+								{
+									"key": "members[1][last_name]",
+									"value": "Kundu",
+									"type": "text"
+								},
+								{
+									"key": "members[1][organization]",
+									"value": "Datasoft",
+									"type": "text"
+								},
+								{
+									"key": "members[1][position]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "members[1][id]",
+									"value": "18",
+									"type": "text"
+								},
+								{
+									"key": "members[0][id]",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:38:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:38:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 10,\n        \"name\": \"Team name 22222\",\n        \"details\": \"team details here......\",\n        \"users\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove team member",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams/10/members/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"10",
+						"members",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/v1/teams/10/members/7",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams/10/members/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams",
+								"10",
+								"members",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:35:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:35:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You are successfully removed member\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Teams",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/v1/teams",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:35:55 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:35:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 10,\n            \"name\": \"Team name 1\",\n            \"details\": \"team details here\",\n            \"users\": []\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Show Team",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/v1/teams/10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjE1Mjg2LCJleHAiOjE2MzAyMTg4ODYsIm5iZiI6MTYzMDIxNTI4NiwianRpIjoiWGJZQlhHeG1TdDQ1SUhVNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iYjRA4bvfUlQKUfWrwc8e82vdNARWsIcYTa7EGNTT5A",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:36:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 05:36:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 10,\n        \"name\": \"Team name 1\",\n        \"details\": \"team details here\",\n        \"users\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Team",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjM0MjMzLCJleHAiOjE2MzAyMzc4MzMsIm5iZiI6MTYzMDIzNDIzMywianRpIjoiSnBhVldGRU5aOGVLUXJHUyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.kYluwOLrFOXBXPtmyhnp7oEV0tS4ic0gcmKmRHMmHLM",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Team",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwMjM0MjMzLCJleHAiOjE2MzAyMzc4MzMsIm5iZiI6MTYzMDIzNDIzMywianRpIjoiSnBhVldGRU5aOGVLUXJHUyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.kYluwOLrFOXBXPtmyhnp7oEV0tS4ic0gcmKmRHMmHLM",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 10:51:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Aug 2021 10:51:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Successfully deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Team wise plan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNjg5OTA4LCJleHAiOjE2MzE2OTM1MDgsIm5iZiI6MTYzMTY4OTkwOCwianRpIjoiZktHVEp3aFdjM1dBN0pmeSIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Dyuw97xWPCJS_fnsWp2cAsJ3tFCpYiwosWwVgFd0B48",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/team-plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"team-plans"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Team wise plan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNjg5OTA4LCJleHAiOjE2MzE2OTM1MDgsIm5iZiI6MTYzMTY4OTkwOCwianRpIjoiZktHVEp3aFdjM1dBN0pmeSIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Dyuw97xWPCJS_fnsWp2cAsJ3tFCpYiwosWwVgFd0B48",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/team-plans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"team-plans"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Sep 2021 07:50:40 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Sep 2021 07:50:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 16,\n            \"name\": \"Team name 1\",\n            \"plan\": {\n                \"id\": 9,\n                \"plan_type\": \"TEAM\",\n                \"plan_name\": \"EXECUTIVE\",\n                \"time_period\": \"MONTHLY\"\n            },\n            \"card_nickname\": \"AMEX\",\n            \"active_projects\": \"YES\",\n            \"past_projects\": \"NO\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Stop Subscription",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNzc5OTg3LCJleHAiOjE2MzE3ODM1ODcsIm5iZiI6MTYzMTc3OTk4NywianRpIjoiaGZXZ29KcTJyc2RsM0RNMyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SWikDZHAkmXUnnptp9rgwJ3G4lJ0Iwy7ufm9d8wC13Q",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/teams/17/subscription-cancel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"17",
+						"subscription-cancel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Stop Subscription",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNzc5OTg3LCJleHAiOjE2MzE3ODM1ODcsIm5iZiI6MTYzMTc3OTk4NywianRpIjoiaGZXZ29KcTJyc2RsM0RNMyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SWikDZHAkmXUnnptp9rgwJ3G4lJ0Iwy7ufm9d8wC13Q",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/teams/17/subscription-cancel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"teams",
+								"17",
+								"subscription-cancel"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Sep 2021 08:18:45 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Sep 2021 08:18:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Team plan subscription successfully stopped!\"\n}"
+				}
+			]
+		}
+	]
+}

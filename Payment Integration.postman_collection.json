@@ -1,0 +1,948 @@
+{
+	"info": {
+		"_postman_id": "2b1dc071-f273-42fd-9718-a6205e07ec53",
+		"name": "Payment Integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save payment method",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNjE3MTI3LCJleHAiOjE2MzE2MjA3MjcsIm5iZiI6MTYzMTYxNzEyNywianRpIjoiSE1sbmJrVjhrUTBxOE5wWCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A-jUsFxnEUlOPuOnn8opL-uoJtsHe8PuTvspb5t1qC0",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"is_same\": false,\r\n    \"billing_info\":{\r\n        \"name\":\"Muhib Billing 1\",\r\n        \"line1\": \"line 1 address\",\r\n        \"line2\": \"line 2 address\",\r\n        \"city\": \"Dhaka\",\r\n        \"state\": \"South\",\r\n        \"country\": \"BD\",\r\n        \"zip_code\": \"1205\"\r\n    },\r\n    \"mailing_info\":{\r\n        \"name\":\"Muhib Billing 1\",\r\n        \"line1\": \"line 1 address\",\r\n        \"line2\": \"line 2 address\",\r\n        \"city\": \"Dhaka\",\r\n        \"state\": \"South\",\r\n        \"country\": \"BD\",\r\n        \"zip_code\": \"1205\"\r\n    },\r\n    \"card_info\":{\r\n        \"nickname\": \"Card Nickname\",\r\n        \"number\": \"5555555555554444\",\r\n        \"expire_date\":\"11/2025\",\r\n        \"cvv\":345\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/payment-method",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"payment-method"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwNDkyMTA1LCJleHAiOjE2MzA0OTU3MDUsIm5iZiI6MTYzMDQ5MjEwNSwianRpIjoiZVpZczhwSUdFQzJzM3JuOCIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.DL9xlYU1rljC_uf8nOqbMtxlvnvhbFqgLXqvquQFHBs",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mailing_info\":{\r\n        \"name\":\"Muhib Billing\",\r\n        \"address\":{\r\n            \"line1\": \"line 1 address\",\r\n            \"line2\": \"line 2 address\",\r\n            \"city\": \"Dhaka\",\r\n            \"state\": \"South\",\r\n            \"country\": \"Bangladesh\",\r\n            \"zip_code\": \"1205\"\r\n        }\r\n    },\r\n    \r\n    \"card_info\":{\r\n        \"nickname\": \"Card Nickname\",\r\n        \"number\": \"4242424242424242\",\r\n        \"expire_date\":\"11/2025\",\r\n        \"cvv\":345\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/payment-method",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"payment-method"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Sep 2021 10:32:44 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Sep 2021 10:32:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "60"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Payment method saved successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Payment method",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwNDg3NjI3LCJleHAiOjE2MzA0OTEyMjcsIm5iZiI6MTYzMDQ4NzYyNywianRpIjoiWmZLTG5RblhNQ1JZYm9ZUiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.YNUWCfsN60guAqrWdO-zcd71J6otw0xGJLueZ1OJkyw",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/payment-methods/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"payment-methods",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save card Used for",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwNDkzMTE5LCJleHAiOjE2MzA0OTY3MTksIm5iZiI6MTYzMDQ5MzExOSwianRpIjoiSWlza3RSdDFTdVJPcWhYNSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.JAFvcGxgc0Qlee2gPbAr3cKfA92uZHTK04Pjfan6Nfc",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"id\": 2,\r\n            \"is_for_team\": true,\r\n            \"is_for_personal\": false\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"is_for_team\": true,\r\n            \"is_for_personal\": true\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/save-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"save-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get payment method by team or personal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNzg5Mzc1LCJleHAiOjE2MzE3OTI5NzUsIm5iZiI6MTYzMTc4OTM3NSwianRpIjoiRTJQM1NDc0xsZUZlbFhNbiIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.p9DYfrAa8xanOfqxctuiko9PIuQFAlBBrSCkXBAlGC4",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/payment-methods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"payment-methods"
+					],
+					"query": [
+						{
+							"key": "is_for_personal",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get payment method by team or personal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwNDk5NDY2LCJleHAiOjE2MzA1MDMwNjYsIm5iZiI6MTYzMDQ5OTQ2NiwianRpIjoiQ0daY1RCTjFLNVVwQVlwZyIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Fzqj1Rt1gCyZ5e3ke-GGfFDIix4KgNZW01XFbG8vBno",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/payment-methods?is_for_personal=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"payment-methods"
+							],
+							"query": [
+								{
+									"key": "is_for_personal",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Sep 2021 12:31:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Sep 2021 12:31:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"pm_id\": \"pm_1JUqjNHgdandjzRtbMNlHxYX\",\n        \"nickname\": \"Card Nickname\",\n        \"number\": \"4242\",\n        \"is_for_team\": 1,\n        \"is_for_personal\": 1,\n        \"created_at\": \"2021-09-01T10:31:45.000000Z\",\n        \"updated_at\": \"2021-09-01T10:57:24.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Plans (by type, time_period)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNDQyMzA0LCJleHAiOjE2MzE0NDU5MDQsIm5iZiI6MTYzMTQ0MjMwNCwianRpIjoiV01rcmFQdUFYdEtsV1VITyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.n-HgWk2jD4lKi8eMdD9a_x5rm880ASsbH41zUjt8lBA",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/plans?plan_type=team&time_period=annually",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"plans"
+					],
+					"query": [
+						{
+							"key": "plan_type",
+							"value": "team"
+						},
+						{
+							"key": "time_period",
+							"value": "annually"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save default plan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNzgyODg5LCJleHAiOjE2MzE3ODY0ODksIm5iZiI6MTYzMTc4Mjg4OSwianRpIjoiemNGbzd5V3hxMnVKSjJuTCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bAYBpx-rFJK8_hmNNpR5U8AhVI1DrrhH33uT-Egj0_E",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "personal_plan_id",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "team_plan_id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/default-plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"default-plans"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save default plan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxNjg2MjI0LCJleHAiOjE2MzE2ODk4MjQsIm5iZiI6MTYzMTY4NjIyNCwianRpIjoiN2hqNUlXS1o4TWp5VzdFUiIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YKSamlg9dDGgceCdeoKUPe7z67NfpBNpkf3oBbOD1zs",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "personal_plan_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "team_plan_id",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/default-plans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"default-plans"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Sep 2021 06:28:59 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Sep 2021 06:28:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Default plans saved!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Subscribe personal plan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMyMDUyMjQ1LCJleHAiOjE2MzIwNTU4NDUsIm5iZiI6MTYzMjA1MjI0NSwianRpIjoiQkx6cXFjenpRQ2Zqam51aCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YLY1DWscVjV6ArVbnjA5cZs4YijZ6LXv--XXXYtaVek",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "plan_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "payment_method_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/subscribe-personal-plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscribe-personal-plans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default team & personal plans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMyMTE1ODY4LCJleHAiOjE2MzIxMTk0NjgsIm5iZiI6MTYzMjExNTg2OCwianRpIjoiS09HeTV1TW9qemZsM21rNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KShU7v4h8wDXfCZB5cIASMS09qIQpIP_sSyRgAqy0Yc",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/default-plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"default-plans"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Default team & personal plans",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMyMTE1ODY4LCJleHAiOjE2MzIxMTk0NjgsIm5iZiI6MTYzMjExNTg2OCwianRpIjoiS09HeTV1TW9qemZsM21rNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KShU7v4h8wDXfCZB5cIASMS09qIQpIP_sSyRgAqy0Yc",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/default-plans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"default-plans"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Sep 2021 06:07:15 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Sep 2021 06:07:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"team_plan\": {\n            \"id\": 7,\n            \"plan_type\": \"TEAM\",\n            \"plan_name\": \"PLUS\",\n            \"time_period\": \"MONTHLY\",\n            \"plan_price\": 9,\n            \"active_projects\": 30,\n            \"total_storage\": 15,\n            \"max_user\": 300\n        },\n        \"personal_plan\": {\n            \"id\": 4,\n            \"plan_type\": \"PERSONAL\",\n            \"plan_name\": \"BRONZE\",\n            \"time_period\": \"ANNUALLY\",\n            \"plan_price\": 0,\n            \"active_projects\": 1,\n            \"total_storage\": 1,\n            \"max_user\": 10\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get alerts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjM0MTA3NTAzLCJleHAiOjE2MzQxMTExMDMsIm5iZiI6MTYzNDEwNzUwMywianRpIjoiNlBCeW4zVlNlWmdxSld1eCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MOEIH7rXUtoh_Bjx99TjuR8yTWGMK-qnDzD-HrzJuRw",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/alerts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"alerts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/v1/alerts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjM0MTA3NTAzLCJleHAiOjE2MzQxMTExMDMsIm5iZiI6MTYzNDEwNzUwMywianRpIjoiNlBCeW4zVlNlWmdxSld1eCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MOEIH7rXUtoh_Bjx99TjuR8yTWGMK-qnDzD-HrzJuRw",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/alerts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"alerts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 07:15:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 07:15:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"user_id\": 17,\n            \"title\": \"Subscription ending alert\",\n            \"description\": \"Your subscription will be ended at 19 Sep, 2022\",\n            \"is_read\": 0\n        },\n        {\n            \"id\": 1,\n            \"user_id\": 17,\n            \"title\": \"Subscription ending alert\",\n            \"description\": \"Your subscription will be ended at 1919 0909, 22222222\",\n            \"is_read\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Selected Plan info(TAX)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjM1ODQ4NTk5LCJleHAiOjE2MzU4NTIxOTksIm5iZiI6MTYzNTg0ODU5OSwianRpIjoiOGlJUnVLNUJpY3N0ZndlNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.12CN0CwX-GO2lNrrk_DmOkaCvewUJoKZF7WuhLZrXZQ",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/subscribed-plan-info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscribed-plan-info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Selected Plan info(TAX)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjM1ODQ4NTk5LCJleHAiOjE2MzU4NTIxOTksIm5iZiI6MTYzNTg0ODU5OSwianRpIjoiOGlJUnVLNUJpY3N0ZndlNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.12CN0CwX-GO2lNrrk_DmOkaCvewUJoKZF7WuhLZrXZQ",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/subscribed-plan-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"subscribed-plan-info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Nov 2021 11:18:18 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Nov 2021 11:18:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"plan_type\": \"PERSONAL\",\n        \"plan_name\": \"SILVER\",\n        \"time_period\": \"ANNUALLY\",\n        \"subtotal\": 55,\n        \"tax\": 5.5,\n        \"total\": 60.5\n    }\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,3312 @@
+{
+	"info": {
+		"_postman_id": "e124b989-0b16-4ee0-b947-87f053354a8d",
+		"name": "Personal Project - Private",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "store project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwNTYyNjEyLCJleHAiOjE2MzA1NjYyMTIsIm5iZiI6MTYzMDU2MjYxMiwianRpIjoiajJLRVdtTnZIWFpEZzZ3SiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.w0R0qWWTeJ7O5QCU4uvYn0a8CX0actNZ8SnEp8swtlw",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Green Tiger",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "project summary",
+							"type": "text"
+						},
+						{
+							"key": "related_files[]",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "is_draft",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/private",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"private"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "store private project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDAxNzM0LCJleHAiOjE2Mjg0MDUzMzQsIm5iZiI6MTYyODQwMTczNCwianRpIjoiWXNkdk1vbWdDR0VTdnNuSyIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.I-1F6NZqlJBqmwZT_qicMb_JhsLly1DorXINNsKra_c",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "dms",
+									"type": "text"
+								},
+								{
+									"key": "summary",
+									"value": "project summary",
+									"type": "text"
+								},
+								{
+									"key": "related_files",
+									"type": "file",
+									"src": [
+										"/C:/Users/PC/Downloads/Design-14Jul/Dashboard-Teams.pdf",
+										"/C:/Users/PC/Downloads/Design-14Jul/Dashboard-Teams-SpecificTeam.pdf"
+									]
+								},
+								{
+									"key": "is_draft",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/private",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"private"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Aug 2021 06:22:01 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Aug 2021 06:22:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 17,\n        \"title\": \"dms\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": null,\n        \"end_date\": null,\n        \"total_collaborators\": null,\n        \"total_support_stuff\": null,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw\": null,\n        \"reminder_before_lw\": null,\n        \"status\": \"ACTIVE\",\n        \"is_draft\": false,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Set Deadline",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMwNTc5MDY5LCJleHAiOjE2MzA1ODI2NjksIm5iZiI6MTYzMDU3OTA2OSwianRpIjoiTkhqbFgzVkdmeXhwc2s5QSIsInN1YiI6MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.DXu2OMjnmLx5AgkXJ2JSz9hjeWYew8zo6QaKV5vgNO4",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"end_date_first\":\"08-09-2021\",\r\n    \"end_date_second\":\"25-09-2021\",\r\n    \"reminder_before_lw_first\":[1,2,3],\r\n    \"reminder_lw_first\":[4,6],\r\n    \"reminder_before_lw_second\": [2,5,6],\r\n    \"reminder_lw_second\": [5,6]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/2/set-deadline",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"2",
+						"set-deadline"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Set Deadline",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDE0OTkwLCJleHAiOjE2Mjg0MTg1OTAsIm5iZiI6MTYyODQxNDk5MCwianRpIjoidjdFMHA2ZlRUQzJWN3lPbSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.dlBdVdC1nFo79efRhDC_BbxEosA33YH1dCMZVP6JEFw",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"end_date_first\":\"02-08-2021\",\r\n    \"end_date_second\":\"02-09-2021\",\r\n    \"reminder_before_lw_first\":[1,2,3],\r\n    \"reminder_lw_first\":[4,6],\r\n    \"reminder_before_lw_second\": [2,5,6],\r\n    \"reminder_lw_second\": [5,6]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/set-deadline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"set-deadline"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Aug 2021 09:34:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Aug 2021 09:34:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 17,\n        \"title\": \"dms\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": null,\n        \"end_date\": null,\n        \"total_collaborators\": 0,\n        \"total_support_stuff\": null,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw\": null,\n        \"reminder_before_lw\": null,\n        \"status\": \"ACTIVE\",\n        \"is_draft\": false,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Store Collaborators",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5NjI0NDA3LCJleHAiOjE2Mjk2MjgwMDcsIm5iZiI6MTYyOTYyNDQwNywianRpIjoidVVtZEhKU1J5UEJDd1BHaSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.UrC5ObKbj7Hiael-pwztxS7pqQTSbFKGOngnQ_31zGo",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"collaborators\":[\r\n        {\r\n            \"id\":11,\r\n            \"email\":\"raja@wow.cc\",\r\n            \"first_name\":\"Kuddus\",\r\n            \"last_name\": \"Ali\",\r\n            \"organization\": \"Sunhill\",\r\n            \"position\": 5\r\n        },\r\n        {\r\n            \"id\": 13,\r\n            \"email\":\"tomal@wow.cc\",\r\n            \"first_name\":\"Tomal\",\r\n            \"last_name\": \"Hasan\",\r\n            \"organization\": \"Sunhill\",\r\n            \"position\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/collaborators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"collaborators"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Store Collaborators",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDk1NDk4LCJleHAiOjE2Mjg0OTkwOTgsIm5iZiI6MTYyODQ5NTQ5OCwianRpIjoiUGpjS1FxZ0R6dGpHcjFreCIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ba7Bd0rkTmJE8IzDiBlc-mJGhNxdydMxfB05AL8C6yQ",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collaborators\":[\r\n        {\r\n            \"email\":\"raja@wow.cc\",\r\n            \"first_name\":\"Kuddus\",\r\n            \"last_name\": \"Ali\",\r\n            \"organization\": \"Sunhill\"\r\n        },\r\n        {\r\n            \"email\":\"tomal@wow.cc\",\r\n            \"first_name\":\"Tomal\",\r\n            \"last_name\": \"Hasan\",\r\n            \"organization\": \"Sunhill\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/1/collaborators",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"1",
+								"collaborators"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 07:56:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 07:56:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"dms\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": null,\n        \"end_date_first\": \"2 Aug, 2021\",\n        \"end_date_second\": \"2 Sep, 2021\",\n        \"total_collaborators\": 2,\n        \"total_support_stuff\": 2,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw_first\": [\n            4,\n            6\n        ],\n        \"reminder_lw_second\": [\n            5,\n            6\n        ],\n        \"reminder_before_lw_first\": [\n            1,\n            2,\n            3\n        ],\n        \"reminder_before_lw_second\": [\n            2,\n            5,\n            6\n        ],\n        \"status\": \"DRAFT\",\n        \"is_draft\": true,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Documents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxMDE4NTEzLCJleHAiOjE2MzEwMjIxMTMsIm5iZiI6MTYzMTAxODUxMywianRpIjoiQnhJemNQTm45anpDN0dqbCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.9wwr-A6iDADLEIAJaEeGBSVnKHq5apl4TyWyyYHNOe8",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "documents[0][title]",
+							"value": "SRS document",
+							"type": "text"
+						},
+						{
+							"key": "documents[0][max_size]",
+							"value": "1024",
+							"type": "text"
+						},
+						{
+							"key": "documents[0][size_unit]",
+							"value": "MB",
+							"type": "text"
+						},
+						{
+							"key": "documents[1][title]",
+							"value": "Report",
+							"type": "text"
+						},
+						{
+							"key": "documents[1][max_size]",
+							"value": "1024",
+							"type": "text"
+						},
+						{
+							"key": "documents[1][size_unit]",
+							"value": "KB",
+							"type": "text"
+						},
+						{
+							"key": "documents[1][template]",
+							"type": "file",
+							"src": "/C:/Users/PC/Downloads/file.pdf"
+						},
+						{
+							"key": "documents[1][formats]",
+							"value": "pdf,doc",
+							"type": "text"
+						},
+						{
+							"key": "documents[0][formats]",
+							"value": "pdf",
+							"type": "text"
+						},
+						{
+							"key": "documents[0][position]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "documents[1][position]",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/41/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"41",
+						"documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Documents",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDIyMTczLCJleHAiOjE2Mjg0MjU3NzMsIm5iZiI6MTYyODQyMjE3MywianRpIjoiVzV3TG95UG80V3oyTnV3VSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3E7zM4MQ4eY3caAVEm5nZyeTjKfoo7UbahBwIGM0YIw",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "documents[0][title]",
+									"value": "SRS document",
+									"type": "text"
+								},
+								{
+									"key": "documents[0][max_size]",
+									"value": "1024",
+									"type": "text"
+								},
+								{
+									"key": "documents[0][size_unit]",
+									"value": "MB",
+									"type": "text"
+								},
+								{
+									"key": "documents[1][title]",
+									"value": "Report",
+									"type": "text"
+								},
+								{
+									"key": "documents[1][max_size]",
+									"value": "1024",
+									"type": "text"
+								},
+								{
+									"key": "documents[1][size_unit]",
+									"value": "KB",
+									"type": "text"
+								},
+								{
+									"key": "documents[1][template]",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/Design-14Jul/DashBoard-Main.pdf"
+								},
+								{
+									"key": "documents[1][formats]",
+									"value": "pdf,doc",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"documents"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Aug 2021 12:24:14 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Aug 2021 12:24:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Documents Requirements Successfully Saved\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Store Support Staffs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDE2NjgyLCJleHAiOjE2Mjg0MjAyODIsIm5iZiI6MTYyODQxNjY4MiwianRpIjoiejhkdThMSnU1TDB2c25TSCIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mJFh4KZGRHxEvMoosXtyfWI5wROl4F-6RwRdK0sHM1I",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"supportStaffs\":[\r\n        {\r\n            \"email\":\"raja@wow.cc\",\r\n            \"first_name\":\"Kuddus\",\r\n            \"last_name\": \"Ali\",\r\n            \"organization\": \"Sunhill\",\r\n            \"scopes\":[\"full\"]\r\n        },\r\n        {\r\n            \"email\":\"tomal@wow.cc\",\r\n            \"first_name\":\"Tomal\",\r\n            \"last_name\": \"Hasan\",\r\n            \"organization\": \"Sunhill\",\r\n            \"scopes\":[\"partial\"]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/1/support-staffs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"1",
+						"support-staffs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Store Support Staffs",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDk1NDk4LCJleHAiOjE2Mjg0OTkwOTgsIm5iZiI6MTYyODQ5NTQ5OCwianRpIjoiUGpjS1FxZ0R6dGpHcjFreCIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ba7Bd0rkTmJE8IzDiBlc-mJGhNxdydMxfB05AL8C6yQ",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "is_draft",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"supportStaffs\":[\r\n        {\r\n            \"email\":\"raja@wow.cc\",\r\n            \"first_name\":\"Kuddus\",\r\n            \"last_name\": \"Ali\",\r\n            \"organization\": \"Sunhill\",\r\n            \"scopes\":[\"full\"]\r\n        },\r\n        {\r\n            \"email\":\"tomal@wow.cc\",\r\n            \"first_name\":\"Tomal\",\r\n            \"last_name\": \"Hasan\",\r\n            \"organization\": \"Sunhill\",\r\n            \"scopes\":[\"partial\"]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/1/support-staffs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"1",
+								"support-staffs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 07:56:30 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 07:56:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"dms\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": null,\n        \"end_date_first\": \"2 Aug, 2021\",\n        \"end_date_second\": \"2 Sep, 2021\",\n        \"total_collaborators\": 2,\n        \"total_support_stuff\": 2,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw_first\": [\n            4,\n            6\n        ],\n        \"reminder_lw_second\": [\n            5,\n            6\n        ],\n        \"reminder_before_lw_first\": [\n            1,\n            2,\n            3\n        ],\n        \"reminder_before_lw_second\": [\n            2,\n            5,\n            6\n        ],\n        \"status\": \"DRAFT\",\n        \"is_draft\": true,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Projects By Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MTA1Njc2LCJleHAiOjE2MjkxMDkyNzYsIm5iZiI6MTYyOTEwNTY3NiwianRpIjoiOXNXUVlnZnpUSHlvenB0MiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5X82WIKM_zSkXpL97hqhlOffCphe9HeUPprorSnkYjI",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects?status=ACTIVE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "ACTIVE"
+						}
+					]
+				},
+				"description": "` status can be - DRAFT or ACTIVE or PAST or DELETED `"
+			},
+			"response": [
+				{
+					"name": "Get Projects By Status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MTA1Njc2LCJleHAiOjE2MjkxMDkyNzYsIm5iZiI6MTYyOTEwNTY3NiwianRpIjoiOXNXUVlnZnpUSHlvenB0MiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5X82WIKM_zSkXpL97hqhlOffCphe9HeUPprorSnkYjI",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects?status=ACTIVE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "ACTIVE"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 09:45:34 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 09:45:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 38,\n            \"title\": \"dms project 1\",\n            \"project_type\": \"PRIVATE\",\n            \"start_date\": \"11 Aug, 2021\",\n            \"end_date_first\": \"2 Aug, 2021\",\n            \"end_date_second\": \"2 Sep, 2021\",\n            \"total_collaborators\": 2,\n            \"total_support_stuff\": 0,\n            \"project_summary\": \"project summary\",\n            \"reminder_lw_first\": [\n                4,\n                6\n            ],\n            \"reminder_lw_second\": [\n                5,\n                6\n            ],\n            \"reminder_before_lw_first\": [\n                1,\n                2,\n                3\n            ],\n            \"reminder_before_lw_second\": [\n                2,\n                5,\n                6\n            ],\n            \"status\": \"ACTIVE\",\n            \"is_draft\": false,\n            \"host_reminder_email\": null,\n            \"initiated_by\": \"Gazi Muhib\",\n            \"initial_date\": \"12 Aug, 2021\",\n            \"my_roles\": [\n                {\n                    \"user_type\": \"HOST\",\n                    \"scopes\": \"\"\n                }\n            ]\n        },\n        {\n            \"id\": 16,\n            \"title\": \"dms\",\n            \"project_type\": \"PRIVATE\",\n            \"start_date\": null,\n            \"end_date_first\": null,\n            \"end_date_second\": null,\n            \"total_collaborators\": 0,\n            \"total_support_stuff\": 0,\n            \"project_summary\": \"project summary\",\n            \"reminder_lw_first\": null,\n            \"reminder_lw_second\": null,\n            \"reminder_before_lw_first\": null,\n            \"reminder_before_lw_second\": null,\n            \"status\": \"ACTIVE\",\n            \"is_draft\": false,\n            \"host_reminder_email\": null,\n            \"initiated_by\": \"Gazi Muhib\",\n            \"initial_date\": \"8 Aug, 2021\",\n            \"my_roles\": [\n                {\n                    \"user_type\": \"HOST\",\n                    \"scopes\": \"\"\n                }\n            ]\n        },\n        {\n            \"id\": 15,\n            \"title\": \"dms\",\n            \"project_type\": \"PRIVATE\",\n            \"start_date\": null,\n            \"end_date_first\": null,\n            \"end_date_second\": null,\n            \"total_collaborators\": 0,\n            \"total_support_stuff\": 0,\n            \"project_summary\": \"project summary\",\n            \"reminder_lw_first\": null,\n            \"reminder_lw_second\": null,\n            \"reminder_before_lw_first\": null,\n            \"reminder_before_lw_second\": null,\n            \"status\": \"ACTIVE\",\n            \"is_draft\": false,\n            \"host_reminder_email\": null,\n            \"initiated_by\": \"Gazi Muhib\",\n            \"initial_date\": \"8 Aug, 2021\",\n            \"my_roles\": [\n                {\n                    \"user_type\": \"HOST\",\n                    \"scopes\": \"\"\n                }\n            ]\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost:8000/api/v1/personal/projects?page=1\",\n        \"last\": \"http://localhost:8000/api/v1/personal/projects?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/v1/personal/projects?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost:8000/api/v1/personal/projects\",\n        \"per_page\": 20,\n        \"to\": 3,\n        \"total\": 3\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Project",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDg4NjIxLCJleHAiOjE2Mjg0OTIyMjEsIm5iZiI6MTYyODQ4ODYyMSwianRpIjoiRjBweWcwcXMwS05PTmtScSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.e4MvXX0MfvpSW5HbOhp85thaWezYZhKj3XAuFzZn__s",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Project",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NDg4NjIxLCJleHAiOjE2Mjg0OTIyMjEsIm5iZiI6MTYyODQ4ODYyMSwianRpIjoiRjBweWcwcXMwS05PTmtScSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.e4MvXX0MfvpSW5HbOhp85thaWezYZhKj3XAuFzZn__s",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"11"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 06:49:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 06:49:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Project Not Found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Assign Collaborators to documents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTAyNTQyLCJleHAiOjE2Mjg1MDYxNDIsIm5iZiI6MTYyODUwMjU0MiwianRpIjoiZVBFejc1SElNRk9QSkwxSCIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.pWObbT8lPYtzALbU-j6ZtHhRL4pl2T9L-VeGC2bQ9IU",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":[\r\n        {\r\n            \"document_id\": 21,\r\n            \"collaborators_ids\":[7,8]\r\n        },\r\n         {\r\n            \"document_id\": 22,\r\n            \"collaborators_ids\":[7]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/assign-collaborators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"assign-collaborators"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Assign Collaborators to documents",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTAyNTQyLCJleHAiOjE2Mjg1MDYxNDIsIm5iZiI6MTYyODUwMjU0MiwianRpIjoiZVBFejc1SElNRk9QSkwxSCIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.pWObbT8lPYtzALbU-j6ZtHhRL4pl2T9L-VeGC2bQ9IU",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":[\r\n        {\r\n            \"document_id\": 21,\r\n            \"collaborators_ids\":[7,8]\r\n        },\r\n         {\r\n            \"document_id\": 22,\r\n            \"collaborators_ids\":[7]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/assign-collaborators",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"assign-collaborators"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 10:10:14 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 10:10:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Collaborators successfully assigned to documents\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Primary Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5NjM0OTgzLCJleHAiOjE2Mjk2Mzg1ODMsIm5iZiI6MTYyOTYzNDk4MywianRpIjoieE5mVzhkTXptNW9Vb1ZuciIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.dKVw9ZEkRy4SZdr0978iGZINiBnwN8CevGa5QBH3GlI",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Primary Info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTA5NTMyLCJleHAiOjE2Mjg1MTMxMzIsIm5iZiI6MTYyODUwOTUzMiwianRpIjoiOFJ6cE45VXBGUUl3c1VZdyIsInN1YiI6MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TmLEw7Flrrm9BNT2PrLz6KZsrFp8ci8-FZChsqgoX9U",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/1/primary-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"1",
+								"primary-info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 11:45:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 11:45:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"dms\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": null,\n        \"end_date_first\": \"2021-08-02\",\n        \"end_date_second\": \"2021-09-02\",\n        \"total_collaborators\": 2,\n        \"total_support_stuff\": 2,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw_first\": [\n            4,\n            6\n        ],\n        \"reminder_lw_second\": [\n            5,\n            6\n        ],\n        \"reminder_before_lw_first\": [\n            1,\n            2,\n            3\n        ],\n        \"reminder_before_lw_second\": [\n            2,\n            5,\n            6\n        ],\n        \"status\": \"DRAFT\",\n        \"is_draft\": true,\n        \"host_reminder_email\": null,\n        \"related_files\": [\n            {\n                \"id\": 1,\n                \"attachment\": \"1_1628413314_sohag_cv.pdf\",\n                \"file_type\": \"pdf\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Collaborators By Project",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTA5NTMyLCJleHAiOjE2Mjg1MTMxMzIsIm5iZiI6MTYyODUwOTUzMiwianRpIjoiOFJ6cE45VXBGUUl3c1VZdyIsInN1YiI6MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TmLEw7Flrrm9BNT2PrLz6KZsrFp8ci8-FZChsqgoX9U",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/1/collaborators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"1",
+						"collaborators"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Collaborators By Project",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTA5NTMyLCJleHAiOjE2Mjg1MTMxMzIsIm5iZiI6MTYyODUwOTUzMiwianRpIjoiOFJ6cE45VXBGUUl3c1VZdyIsInN1YiI6MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TmLEw7Flrrm9BNT2PrLz6KZsrFp8ci8-FZChsqgoX9U",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/1/collaborators",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"1",
+								"collaborators"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 12:22:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 12:22:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"first_name\": \"Kuddus\",\n            \"last_name\": \"Ali\",\n            \"email\": \"raja@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"COLLABORATOR\",\n            \"scopes\": \"\"\n        },\n        {\n            \"id\": 3,\n            \"first_name\": \"Tomal\",\n            \"last_name\": \"Hasan\",\n            \"email\": \"tomal@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"COLLABORATOR\",\n            \"scopes\": \"\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Support Staffs By Project",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTA5NTMyLCJleHAiOjE2Mjg1MTMxMzIsIm5iZiI6MTYyODUwOTUzMiwianRpIjoiOFJ6cE45VXBGUUl3c1VZdyIsInN1YiI6MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TmLEw7Flrrm9BNT2PrLz6KZsrFp8ci8-FZChsqgoX9U",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/1/support-staffs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"1",
+						"support-staffs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Support Staffs By Project",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTA5NTMyLCJleHAiOjE2Mjg1MTMxMzIsIm5iZiI6MTYyODUwOTUzMiwianRpIjoiOFJ6cE45VXBGUUl3c1VZdyIsInN1YiI6MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TmLEw7Flrrm9BNT2PrLz6KZsrFp8ci8-FZChsqgoX9U",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/1/support-staffs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"1",
+								"support-staffs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 12:23:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 12:23:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"first_name\": \"Kuddus\",\n            \"last_name\": \"Ali\",\n            \"email\": \"raja@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"full\"\n            ]\n        },\n        {\n            \"id\": 3,\n            \"first_name\": \"Tomal\",\n            \"last_name\": \"Hasan\",\n            \"email\": \"tomal@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"partial\"\n            ]\n        },\n        {\n            \"id\": 2,\n            \"first_name\": \"Kuddus\",\n            \"last_name\": \"Ali\",\n            \"email\": \"raja@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"full\"\n            ]\n        },\n        {\n            \"id\": 3,\n            \"first_name\": \"Tomal\",\n            \"last_name\": \"Hasan\",\n            \"email\": \"tomal@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"partial\"\n            ]\n        },\n        {\n            \"id\": 2,\n            \"first_name\": \"Kuddus\",\n            \"last_name\": \"Ali\",\n            \"email\": \"raja@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"full\"\n            ]\n        },\n        {\n            \"id\": 3,\n            \"first_name\": \"Tomal\",\n            \"last_name\": \"Hasan\",\n            \"email\": \"tomal@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"partial\"\n            ]\n        },\n        {\n            \"id\": 2,\n            \"first_name\": \"Kuddus\",\n            \"last_name\": \"Ali\",\n            \"email\": \"raja@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"full\"\n            ]\n        },\n        {\n            \"id\": 3,\n            \"first_name\": \"Tomal\",\n            \"last_name\": \"Hasan\",\n            \"email\": \"tomal@wow.cc\",\n            \"organization\": \"Sunhill\",\n            \"user_type\": \"SUPPORT_STAFF\",\n            \"scopes\": [\n                \"partial\"\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Start project and send email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTk5NTgzLCJleHAiOjE2Mjg2MDMxODMsIm5iZiI6MTYyODU5OTU4MywianRpIjoieWR1WWM4TnNOUU9pclJJRyIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.X11C8_krNlXX5WRMtWaztd-V5AtRqz7r80NSLpBYT0U",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/start-project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"start-project"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save project and send email",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTg2ODMwLCJleHAiOjE2Mjg1OTA0MzAsIm5iZiI6MTYyODU4NjgzMCwianRpIjoiUWVSa0RiRGJWU1hjZ3JpaiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.wtpX6B7NtegGQyJfwSqnp4b0xOGHeKtYKSsF2Pn2vxI",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/start-project",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"start-project"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Aug 2021 09:14:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Aug 2021 09:14:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Your project has been successfully started!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTkxMDQ3LCJleHAiOjE2Mjg1OTQ2NDcsIm5iZiI6MTYyODU5MTA0NywianRpIjoiUnpBTnhDTTFnTU9KbjhZTyIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.F9M-3ALbgpSuF1CCfCxQCq1Ndv86-zA9ADCglGTooEA",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "dms project 1",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "project summary",
+							"type": "text"
+						},
+						{
+							"key": "is_draft",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "related_files[]",
+							"type": "file",
+							"src": [
+								"/C:/Users/PC/Downloads/Design-14Jul/xxxxDashboard-Personal-All-Projects-Status.pdf",
+								"/C:/Users/PC/Downloads/Design-14Jul/xxxxDashboard-Personal-NewPrivateProject.pdf"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTkxMDQ3LCJleHAiOjE2Mjg1OTQ2NDcsIm5iZiI6MTYyODU5MTA0NywianRpIjoiUnpBTnhDTTFnTU9KbjhZTyIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.F9M-3ALbgpSuF1CCfCxQCq1Ndv86-zA9ADCglGTooEA",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "dms project 1",
+									"type": "text"
+								},
+								{
+									"key": "summary",
+									"value": "project summary",
+									"type": "text"
+								},
+								{
+									"key": "is_draft",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "related_files[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/PC/Downloads/Design-14Jul/xxxxDashboard-Personal-All-Projects-Status.pdf",
+										"/C:/Users/PC/Downloads/Design-14Jul/xxxxDashboard-Personal-NewPrivateProject.pdf"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Aug 2021 10:29:58 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Aug 2021 10:29:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 17,\n        \"title\": \"dms project 1\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": \"2021-08-10 09:14:01\",\n        \"end_date_first\": \"2 Aug, 2021\",\n        \"end_date_second\": \"2 Sep, 2021\",\n        \"total_collaborators\": 2,\n        \"total_support_stuff\": 0,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw_first\": [\n            4,\n            6\n        ],\n        \"reminder_lw_second\": [\n            5,\n            6\n        ],\n        \"reminder_before_lw_first\": [\n            1,\n            2,\n            3\n        ],\n        \"reminder_before_lw_second\": [\n            2,\n            5,\n            6\n        ],\n        \"status\": \"ACTIVE\",\n        \"is_draft\": false,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove project attachments",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NTk1MzMzLCJleHAiOjE2Mjg1OTg5MzMsIm5iZiI6MTYyODU5NTMzMywianRpIjoiRW8yVzFvVTd5TTVvbE55QSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.lOAfWPOOlST2jteDdylcAQXLETjUcZnZOEMRwTYEpvQ",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/attachments/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"attachments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Project details for host, collaborators",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5NjI5NzM0LCJleHAiOjE2Mjk2MzMzMzQsIm5iZiI6MTYyOTYyOTczNCwianRpIjoiSllqMHFhWGlTSmxONml5WCIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.MXOBYmj3CzcaY_bVnIRhfbdXQTC_kAOq_DNiaBf_lhM",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Project details for host, collaborators",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4Njc2Mjg4LCJleHAiOjE2Mjg2Nzk4ODgsIm5iZiI6MTYyODY3NjI4OCwianRpIjoiYmh3WjkyczRPcFZGVHhGTiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.9mGNVGG1EnQeKj7sPJXItvGqSdRACHS4P1fA0AmDCqM",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Aug 2021 10:22:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Aug 2021 10:22:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 17,\n        \"title\": \"dms project 1\",\n        \"summary\": \"project summary\",\n        \"documents\": [\n            {\n                \"id\": 22,\n                \"title\": \"Report\",\n                \"template\": \"4_1628425937_DashBoard-Main.pdf\",\n                \"max_size\": \"1024\",\n                \"size_unit\": \"KB\",\n                \"formats\": \"\\\"pdf,doc\\\"\"\n            },\n            {\n                \"id\": 21,\n                \"title\": \"SRS document\",\n                \"template\": null,\n                \"max_size\": \"1024\",\n                \"size_unit\": \"MB\",\n                \"formats\": null\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Project details for host, collaborators",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4Njc2Mjg4LCJleHAiOjE2Mjg2Nzk4ODgsIm5iZiI6MTYyODY3NjI4OCwianRpIjoiYmh3WjkyczRPcFZGVHhGTiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.9mGNVGG1EnQeKj7sPJXItvGqSdRACHS4P1fA0AmDCqM",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Aug 2021 10:25:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Aug 2021 10:25:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 17,\n        \"title\": \"dms project 1\",\n        \"summary\": \"project summary\",\n        \"collaborators\": [\n            {\n                \"id\": 4,\n                \"first_name\": \"Gazi\",\n                \"last_name\": \"Muhib\",\n                \"email\": \"muhibgazi@gmail.com\",\n                \"user_type\": \"COLLABORATOR\",\n                \"scopes\": \"\",\n                \"documents\": [\n                    {\n                        \"id\": 22,\n                        \"title\": \"Report\",\n                        \"template\": \"4_1628425937_DashBoard-Main.pdf\",\n                        \"max_size\": \"1024\",\n                        \"size_unit\": \"KB\",\n                        \"formats\": \"\\\"pdf,doc\\\"\"\n                    },\n                    {\n                        \"id\": 21,\n                        \"title\": \"SRS document\",\n                        \"template\": null,\n                        \"max_size\": \"1024\",\n                        \"size_unit\": \"MB\",\n                        \"formats\": null\n                    }\n                ]\n            },\n            {\n                \"id\": 8,\n                \"first_name\": \"Tomal\",\n                \"last_name\": \"Hasan\",\n                \"email\": \"noone4243@gmail.com\",\n                \"user_type\": \"COLLABORATOR\",\n                \"scopes\": \"\",\n                \"documents\": [\n                    {\n                        \"id\": 21,\n                        \"title\": \"SRS document\",\n                        \"template\": null,\n                        \"max_size\": \"1024\",\n                        \"size_unit\": \"MB\",\n                        \"formats\": null\n                    },\n                    {\n                        \"id\": 21,\n                        \"title\": \"SRS document\",\n                        \"template\": null,\n                        \"max_size\": \"1024\",\n                        \"size_unit\": \"MB\",\n                        \"formats\": null\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Duplicate project details with all relations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NzU4NTcyLCJleHAiOjE2Mjg3NjIxNzIsIm5iZiI6MTYyODc1ODU3MiwianRpIjoidk1OZUhYbU55THJEejg1biIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5j07dFEy4LDLfsedLxkdzYsmOHeyKZU7frpjTv4brsk",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/copy-project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"copy-project"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Duplicate project details with all relations",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NzU4NTcyLCJleHAiOjE2Mjg3NjIxNzIsIm5iZiI6MTYyODc1ODU3MiwianRpIjoidk1OZUhYbU55THJEejg1biIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5j07dFEy4LDLfsedLxkdzYsmOHeyKZU7frpjTv4brsk",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/copy-project",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"copy-project"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Aug 2021 09:55:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Aug 2021 09:55:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 55,\n        \"title\": \"dms project 1\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": \"11 Aug, 2021\",\n        \"end_date_first\": \"2 Aug, 2021\",\n        \"end_date_second\": \"2 Sep, 2021\",\n        \"total_collaborators\": 2,\n        \"total_support_stuff\": 0,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw_first\": [\n            4,\n            6\n        ],\n        \"reminder_lw_second\": [\n            5,\n            6\n        ],\n        \"reminder_before_lw_first\": [\n            1,\n            2,\n            3\n        ],\n        \"reminder_before_lw_second\": [\n            2,\n            5,\n            6\n        ],\n        \"status\": \"DRAFT\",\n        \"is_draft\": true,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Upload csv",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI4NjgyMzAxLCJleHAiOjE2Mjg2ODU5MDEsIm5iZiI6MTYyODY4MjMwMSwianRpIjoiU0FDUHV2eGFNcFZnTlN3ayIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.6M0PoYmJ32RI8JI9biuAHLohfB-aPGyVypLMbPOUCIo",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_collaborators",
+							"type": "file",
+							"src": "/C:/Users/PC/Downloads/collaborators_1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/upload-csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"upload-csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove document",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MTEzODcyLCJleHAiOjE2MjkxMTc0NzIsIm5iZiI6MTYyOTExMzg3MiwianRpIjoiWXY1d3dYUXF0VkhROVFKUiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zYr75UhLgDS3fZP9ls7F7e0KS0rQkA7WkVXSg2F1DEg",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/documents/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"documents",
+						"22"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Remove document",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MDkyODY5LCJleHAiOjE2MjkwOTY0NjksIm5iZiI6MTYyOTA5Mjg2OSwianRpIjoidWQzY1pUV21PQmZZT0pLWSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zT4t8giOhzGPIl6RYHMbmkeu-2BRUmcqFPzuWe80RGY",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/documents/19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"documents",
+								"19"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 05:49:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 05:49:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You have been successfully removed document from this project\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove user from project",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MDkyODY5LCJleHAiOjE2MjkwOTY0NjksIm5iZiI6MTYyOTA5Mjg2OSwianRpIjoidWQzY1pUV21PQmZZT0pLWSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zT4t8giOhzGPIl6RYHMbmkeu-2BRUmcqFPzuWe80RGY",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/users/11?user_type=COLLABORATOR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"users",
+						"11"
+					],
+					"query": [
+						{
+							"key": "user_type",
+							"value": "COLLABORATOR"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Remove user from project",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MDk3MzkyLCJleHAiOjE2MjkxMDA5OTIsIm5iZiI6MTYyOTA5NzM5MiwianRpIjoiaXFpaUptb1pFb0RhRHNvMSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.axwfcD3MYOqLHvbOMdzonx6UvyfSLeobGvIJEOECtDI",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/users/11?user_type=SUPPORT_STAFF",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"users",
+								"11"
+							],
+							"query": [
+								{
+									"key": "user_type",
+									"value": "SUPPORT_STAFF"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 07:03:26 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 07:03:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You have been successfully removed user from this project\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove Document Template",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MDk3MzkyLCJleHAiOjE2MjkxMDA5OTIsIm5iZiI6MTYyOTA5NzM5MiwianRpIjoiaXFpaUptb1pFb0RhRHNvMSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.axwfcD3MYOqLHvbOMdzonx6UvyfSLeobGvIJEOECtDI",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/documents/20/template",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"documents",
+						"20",
+						"template"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop Project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxMDA3NzExLCJleHAiOjE2MzEwMTEzMTEsIm5iZiI6MTYzMTAwNzcxMSwianRpIjoiWHdvaVBWbUJHTVJEN1lUNCIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.DtUO6losUyxvUJJiUCAPvF3TIaxyDu2v2_clXKpZFGc",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/41/stop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"41",
+						"stop"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Stop Project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MTA1Njc2LCJleHAiOjE2MjkxMDkyNzYsIm5iZiI6MTYyOTEwNTY3NiwianRpIjoiOXNXUVlnZnpUSHlvenB0MiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5X82WIKM_zSkXpL97hqhlOffCphe9HeUPprorSnkYjI",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/stop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"stop"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 09:42:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Aug 2021 09:42:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 17,\n        \"title\": \"dms project 1\",\n        \"project_type\": \"PRIVATE\",\n        \"start_date\": \"11 Aug, 2021\",\n        \"end_date_first\": \"2 Aug, 2021\",\n        \"end_date_second\": \"2 Sep, 2021\",\n        \"total_collaborators\": 2,\n        \"total_support_stuff\": 0,\n        \"project_summary\": \"project summary\",\n        \"reminder_lw_first\": [\n            4,\n            6\n        ],\n        \"reminder_lw_second\": [\n            5,\n            6\n        ],\n        \"reminder_before_lw_first\": [\n            1,\n            2,\n            3\n        ],\n        \"reminder_before_lw_second\": [\n            2,\n            5,\n            6\n        ],\n        \"status\": \"STOP\",\n        \"is_draft\": false,\n        \"host_reminder_email\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Upload Documents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5NjE3NjgxLCJleHAiOjE2Mjk2MjEyODEsIm5iZiI6MTYyOTYxNzY4MSwianRpIjoiS1hNUGtjM01HRFFuRHpaNCIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.NhPBst70zxTrQYWc1cbimvyUgnTC7XhpI9fhm9ZcxMo",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "documents[0][id]",
+							"value": "47",
+							"type": "text"
+						},
+						{
+							"key": "documents[0][file]",
+							"type": "file",
+							"src": "/C:/Users/PC/Downloads/Design-14Jul/xDashBoard-Profile.pdf"
+						},
+						{
+							"key": "documents[1][id]",
+							"value": "48",
+							"type": "text"
+						},
+						{
+							"key": "documents[1][file]",
+							"type": "file",
+							"src": "/C:/Users/PC/Downloads/Design-14Jul/xDashBoard-PricingPlan.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/upload-documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"upload-documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/v1/personal/projects/17/upload-documents",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5Mjc4NTU2LCJleHAiOjE2MjkyODIxNTYsIm5iZiI6MTYyOTI3ODU1NiwianRpIjoiYW42SUdjZlRVZUg5allKNiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-H-CWs0_S5AOcMK77vg7OLUIhPtjrOJNsPl9PL2FsB0",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "documents[0][id]",
+									"value": "47",
+									"type": "text"
+								},
+								{
+									"key": "documents[0][file]",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/Design-14Jul/xxxxDashboard-Personal-NewPublicProject.pdf"
+								},
+								{
+									"key": "documents[1][id]",
+									"value": "48",
+									"type": "text"
+								},
+								{
+									"key": "documents[1][file]",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/Design-14Jul/Dashboard-Personal.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/upload-documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"upload-documents"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 09:24:00 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 09:24:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Documents successfully saved!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Save decision about document",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5NjI2MzYxLCJleHAiOjE2Mjk2Mjk5NjEsIm5iZiI6MTYyOTYyNjM2MSwianRpIjoiODlURmJEU3BDd0lQTnhHTiIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.x12nZObhb-1Yu10E8krVYiCcLoXlhjROn3uAEh6G83o",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "47",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "APPROVED",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "this is approved.",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/save-decision",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"save-decision"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Documents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MzY2Mzg3LCJleHAiOjE2MjkzNjk5ODcsIm5iZiI6MTYyOTM2NjM4NywianRpIjoiYWpZUFNuRDFLM2p0Q0Y3TSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.8A8CPidQ0Fr3K9fniCXYcMR89lgrxxRQzfiM5i0Ra7Y",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/users/8/download-documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"users",
+						"8",
+						"download-documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save collaborator support staff position",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MzY4MDcyLCJleHAiOjE2MjkzNzE2NzIsIm5iZiI6MTYyOTM2ODA3MiwianRpIjoiNW1rdG1LYXFOYWpIRks4cSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.UWVRwjMIokZAPXdXGRybsTWpYsyck4JW0Yn3piHZC0w",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "position",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/users/8/save-position",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"users",
+						"8",
+						"save-position"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save collaborator support staff position",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MzY4MDcyLCJleHAiOjE2MjkzNzE2NzIsIm5iZiI6MTYyOTM2ODA3MiwianRpIjoiNW1rdG1LYXFOYWpIRks4cSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.UWVRwjMIokZAPXdXGRybsTWpYsyck4JW0Yn3piHZC0w",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/17/users/8/save-position",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"17",
+								"users",
+								"8",
+								"save-position"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 10:33:32 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 10:33:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Position successfully saved!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/v1/personal/projects/17/documents/47/save-position",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5MzY4MDcyLCJleHAiOjE2MjkzNzE2NzIsIm5iZiI6MTYyOTM2ODA3MiwianRpIjoiNW1rdG1LYXFOYWpIRks4cSIsInN1YiI6NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.UWVRwjMIokZAPXdXGRybsTWpYsyck4JW0Yn3piHZC0w",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "position",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/17/documents/47/save-position",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"17",
+						"documents",
+						"47",
+						"save-position"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Documents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvcmVmcmVzaCIsImlhdCI6MTYyOTYwODc1NCwiZXhwIjoxNjI5NjE2MzQyLCJuYmYiOjE2Mjk2MTI3NDIsImp0aSI6ImxtYzV0cjBweDc3dkl1QmQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.3ibzQGG9K2e9UlOl35p22xK4MlVA_iZcfzMLWC2hizU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/10/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"10",
+						"documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Documents",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": " Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvcmVmcmVzaCIsImlhdCI6MTYyOTYwODc1NCwiZXhwIjoxNjI5NjE2MzQyLCJuYmYiOjE2Mjk2MTI3NDIsImp0aSI6ImxtYzV0cjBweDc3dkl1QmQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.3ibzQGG9K2e9UlOl35p22xK4MlVA_iZcfzMLWC2hizU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/10/documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"10",
+								"documents"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Aug 2021 06:27:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Aug 2021 06:27:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 35,\n            \"title\": \"d df dfd\",\n            \"template\": \"1_1629357292_Personal_Private_Project_-_Create_Project.pdf\",\n            \"status\": \"REJECTED\",\n            \"note\": \"d fdf df df df d 002555\",\n            \"max_size\": \"200\",\n            \"size_unit\": \"KB\",\n            \"formats\": \"docx, pdf\",\n            \"collaborators_ids\": [\n                2,\n                4\n            ],\n            \"template_url\": \"http://localhost:8000/storage/uploads/project_10/templates/1_1629357292_Personal_Private_Project_-_Create_Project.pdf\",\n            \"attachment\": {\n                \"id\": 19,\n                \"attachment\": \"4_1629368677_S._M._Sohel_Reza_CUET.pdf\",\n                \"project_id\": 10,\n                \"attachment_url\": \"http://localhost:8000/storage/uploads/project_10/documents/4_1629368677_S._M._Sohel_Reza_CUET.pdf\",\n                \"file_type\": \"pdf\"\n            }\n        },\n        {\n            \"id\": 36,\n            \"title\": \"df df df d\",\n            \"template\": null,\n            \"status\": \"PENDING\",\n            \"note\": \"\",\n            \"max_size\": \"10\",\n            \"size_unit\": \"MB\",\n            \"formats\": \"docx\",\n            \"collaborators_ids\": [\n                2\n            ],\n            \"template_url\": \"\",\n            \"attachment\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Send Decisions using email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxMDAwMTc0LCJleHAiOjE2MzEwMDM3NzQsIm5iZiI6MTYzMTAwMDE3NCwianRpIjoiUXNqamhqMHBoZDc2dERGeSIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.AuHcVl6eci9GsOlDLrykGjoIvZZOhu0Jvw9ZIjsj1_o",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/38/collaborators/17/send-decisions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"38",
+						"collaborators",
+						"17",
+						"send-decisions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Force Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjMxMDkzOTIwLCJleHAiOjE2MzEwOTc1MjAsIm5iZiI6MTYzMTA5MzkyMCwianRpIjoiUjhIdnFXUVpRNDZWcGRrOSIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hyr8Tx3JkDq64qNmtZbq6vTbMI6sGBn4nRWoh10Qu24",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "is_draft",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/40/force-delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"40",
+						"force-delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

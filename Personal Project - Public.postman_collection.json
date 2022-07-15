@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "dcc938ac-da36-43f0-a924-efb0453c73cf",
+		"name": "Personal Project - Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Verify public project by pid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5OTU1OTYxLCJleHAiOjE2Mjk5NTk1NjEsIm5iZiI6MTYyOTk1NTk2MSwianRpIjoiOXVyaUt2cVZ3dDhyM1dpNyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.4NV1iGFRaWe0GILEAMRRHGAaNfI9yeYKZJCvVvFb5AY",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pid",
+							"value": "298634751",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/verify-pid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"verify-pid"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5ODA3MjUwLCJleHAiOjE2Mjk4MTA4NTAsIm5iZiI6MTYyOTgwNzI1MCwianRpIjoiTFBaZHVwU3ozTWJTNFZ4YiIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VhSPcHPILyRa6Fxg488TXz0q6xahR-2uNygeSAjSk1Y",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pid",
+									"value": "298634751",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/verify-pid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"verify-pid"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Aug 2021 13:06:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Aug 2021 13:06:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You can add collaborator in this project\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Project details by pid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5OTU1OTYxLCJleHAiOjE2Mjk5NTk1NjEsIm5iZiI6MTYyOTk1NTk2MSwianRpIjoiOXVyaUt2cVZ3dDhyM1dpNyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.4NV1iGFRaWe0GILEAMRRHGAaNfI9yeYKZJCvVvFb5AY",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/298634751/project-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"298634751",
+						"project-details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Project details by pid",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5ODY4NjkzLCJleHAiOjE2Mjk4NzIyOTMsIm5iZiI6MTYyOTg2ODY5MywianRpIjoiaEdCeXdyVWtqc05JbTZEZyIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Z1m3mpaiATRFkuKLpqU2_QqmOcTP3-WQ3b7FmXitB-M",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/personal/projects/298634751/project-details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"personal",
+								"projects",
+								"298634751",
+								"project-details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 05:50:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 05:50:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 56,\n        \"pid\": 298634751,\n        \"title\": \"Green tiger public\",\n        \"project_type\": \"PUBLIC\",\n        \"start_date\": \"24 Aug, 2021\",\n        \"end_date_first\": \"22 Sep, 2021\",\n        \"end_date_second\": \"20 Oct, 2021\",\n        \"project_summary\": \"this is public project\",\n        \"project_owner\": {\n            \"id\": 17,\n            \"first_name\": \"Gazi\",\n            \"last_name\": \"Muhib\",\n            \"email\": \"muhibgazi@gmail.com\",\n            \"organization\": null,\n            \"user_type\": \"HOST\",\n            \"scopes\": null,\n            \"position\": 0\n        },\n        \"documents\": [\n            {\n                \"id\": 53,\n                \"title\": \"Document  1\",\n                \"template\": null,\n                \"status\": \"PENDING\",\n                \"note\": \"\",\n                \"max_size\": \"2\",\n                \"size_unit\": \"MB\",\n                \"formats\": \"pdf\",\n                \"position\": 0,\n                \"collaborators_ids\": [],\n                \"template_url\": \"\",\n                \"attachment\": null\n            },\n            {\n                \"id\": 54,\n                \"title\": \"Document 2\",\n                \"template\": null,\n                \"status\": \"PENDING\",\n                \"note\": \"\",\n                \"max_size\": \"3\",\n                \"size_unit\": \"MB\",\n                \"formats\": \"pdf\",\n                \"position\": 1,\n                \"collaborators_ids\": [],\n                \"template_url\": \"\",\n                \"attachment\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add User to external project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvYXV0aFwvc2lnbmluIiwiaWF0IjoxNjI5OTU4Njc2LCJleHAiOjE2Mjk5NjIyNzYsIm5iZiI6MTYyOTk1ODY3NiwianRpIjoiQTFtY0lZYkNkbzJrSkdkcSIsInN1YiI6MTcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.iAks7ppiuudiMaJTeJ-QT1m6r3qqLn0gCDRMrIt0X_8",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/personal/projects/56/add-project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"personal",
+						"projects",
+						"56",
+						"add-project"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
